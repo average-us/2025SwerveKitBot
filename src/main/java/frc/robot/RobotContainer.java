@@ -40,6 +40,7 @@ public class RobotContainer {
     // Configure the button bindings
     configureButtonBindings();
     drivetrain.setDefaultCommand(new SwerveDrive(drivetrain));
+    outtake.setDefaultCommand(new ControlOuttake(() -> 0, () -> 0, outtake));
   }
 
   /**
